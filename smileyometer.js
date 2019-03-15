@@ -2,7 +2,7 @@
  * The Smileyometer is based on 5-point Likert scale (configurable from 2 to 5) showing very sad to very happy faces.
  *
  * Sclera symbols (https://www.sclera.be) are licensed by creative commons (CC BY-NC 2.0 BE).
- * Code is licensed by creative commons (CC BY-NC-ND 3.0).
+ * Code is licensed by GNU General Public License v3.0.
  * 
  * @author (Tero Avellan, tero.avellan@tuni.fi) 
  * @version (20190302)
