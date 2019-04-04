@@ -11,13 +11,14 @@
 var smileyWidth, smileyHeight, smileyTextY, smileyTextSize; 
 var smileyColor, smileyData, smileyImg, smileyState;
 var smileyRangeAsc, smileyRangeSize, smileyRangeLabel, smileyResponseTime;
-var colors, images, timestamp;
+var backgroundColor, colors, images, timestamp;
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
   
+  backgroundColor = color(0,0,0);
   smileyRangeAsc = true; // True = Ascending, False = Descending
-  smileyRangeSize = 2; // Size of pictorial Likert scale
+  smileyRangeSize = 4; // Size of pictorial Likert scale
   smileyRangeLabel = true; // True = show, False = hidden
   smileyResponseTime = 1500; // Time between possible clicks in ms
   
@@ -97,7 +98,7 @@ function draw() {
   for(smileyIndex=0; smileyIndex<smileyRangeSize; smileyIndex++) { smileyData[smileyIndex] = Number(localStorage['smileyPoint'+smileyIndex]); }
   smileyDataSum = smileyData.reduce(function(a, b) { return a + b; }, 0);
   
-  background(0);
+  background(backgroundColor);
   imageMode(CENTER);
   textAlign(CENTER);
   
